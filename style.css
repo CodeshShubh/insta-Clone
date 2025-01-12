@@ -26,8 +26,15 @@
   align-items: left;
   gap: 60px;
   padding: 2rem;
+  border-right: 1px solid #dbdbdb;
 }
-
+.heading {
+  > img {
+    width: 120px;
+    height: 30px;
+    margin-top: 3px;
+  }
+}
 .ul_links > ul {
   display: flex;
   flex-direction: column;
@@ -63,7 +70,7 @@
   overflow-x: scroll;
   scrollbar-width: none;
   margin-left: 3.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .stories {
@@ -167,11 +174,21 @@
   flex-direction: column;
   gap: 16px;
 }
+
 .suggested_followers_card {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.9s ease;
 }
+
+.suggested_followers_card:hover {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px 2px 2px 18px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .img_text {
   display: flex;
   align-items: center;
@@ -200,17 +217,18 @@
 footer {
   width: 29%;
   position: absolute;
-  top: 56px;
+  top: 75px;
   right: 41px;
 }
 .suggested_followers_profile_image {
   > img {
     width: 35px;
     height: 35px;
+    margin-top: 4px;
   }
 }
-.copyright_navlinks{
-    margin-top: 32px;
+.copyright_navlinks {
+  margin-top: 32px;
 }
 .ancor_links {
   > a {
@@ -219,8 +237,82 @@ footer {
   }
 }
 .copyrights {
-    margin-top: 20px;
-  font-family: Roboto;
+  margin-top: 20px;
   font-size: 15px;
   color: #c7c7c7;
+}
+.posts_container {
+  padding: 1rem;
+  width: 52%;
+  margin: 8px 0 0 50px;
+}
+.Post_card_catainer {
+  width: 90%;
+  margin: 0 auto;
+}
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > p {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+.dp_nd_text_icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  > p:last-of-type {
+    color: #8e8e8e;
+  }
+  > img {
+    width: 15px;
+    height: 15px;
+  }
+  > img:first-child {
+    width: 45px;
+    height: 45px;
+  }
+}
+.post_image {
+  margin: 0 auto;
+  > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.post_btn_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 10px;
+}
+.first_three {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.post_text_container {
+  > p {
+    line-height: 1.5;
+  }
+  >p:nth-child(4){
+    color: #8E8E8E;
+  }
+  >hr{
+    margin:20px 0px 20px;
+  }
+}
+.comment_text_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    >img{
+        width: 18px;
+        height: 18px;
+    }
 }
